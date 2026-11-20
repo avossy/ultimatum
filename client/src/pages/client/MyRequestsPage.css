@@ -1,0 +1,121 @@
+body {
+  background-color: #fff !important;
+}
+
+.my-requests {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 24px 64px;
+}
+
+.my-requests__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.my-requests__header h1 {
+  font-size: 28px;
+  color: var(--color-dark);
+  margin: 0 0 4px;
+}
+
+.my-requests__header p {
+  font-size: 13px;
+  color: var(--color-primary);
+  margin: 0;
+}
+
+.my-requests__tabs {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.my-requests__tabs button {
+  padding: 9px 18px;
+  border-radius: 999px;
+  border: 1.5px solid var(--color-muted);
+  background: #fff;
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 13px;
+  color: var(--color-primary);
+  cursor: pointer;
+}
+
+.my-requests__tabs .tab-active {
+  background: var(--color-primary);
+  border-color: var(--color-primary);
+  color: #fff;
+}
+
+.requests-list {
+  list-style: none;
+  margin: 0;
+  padding: 12px 20px;
+  background: var(--color-bg);
+  border-radius: var(--radius-lg);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.request-row {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  align-items: center;
+  gap: 16px;
+  background: #fff;
+  border-radius: var(--radius-sm);
+  padding: 12px;
+  text-decoration: none;
+  color: var(--color-dark);
+  & span {
+    justify-self: end;
+  }
+}
+
+@media (max-width: 640px) {
+  .request-row {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .requests-list {
+    padding: 12px;
+  }
+}
+
+.request-row__main {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.request-row__id {
+  font-size: 11px;
+  font-weight: 600;
+  color: #7d8db0;
+}
+
+.request-row__device {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.request-row__date,
+.request-row__cost {
+  font-size: 13px;
+  color: var(--color-primary);
+}
+
+.requests-empty {
+  text-align: center;
+  padding: 24px 0;
+  font-size: 13px;
+  color: var(--color-primary);
+}

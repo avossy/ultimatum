@@ -1,0 +1,293 @@
+.booking-page {
+  background: #fff;
+  min-height: 100vh;
+}
+
+.booking-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 24px 64px;
+}
+
+.booking-back {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  margin-bottom: 16px;
+}
+
+.booking-container h1 {
+  font-size: 28px;
+  color: var(--color-dark);
+  margin: 0 0 8px;
+}
+
+.booking-subtitle {
+  font-size: 14px;
+  color: var(--color-primary);
+  margin: 0 0 16px;
+}
+
+.booking-master-tag {
+  display: inline-block;
+  background: var(--color-bg);
+  color: var(--color-primary);
+  font-size: 13px;
+  font-weight: 600;
+  padding: 6px 14px;
+  border-radius: 999px;
+  margin-bottom: 24px;
+}
+
+/* Кроки */
+.booking-steps {
+  list-style: none;
+  display: flex;
+  gap: 12px;
+  padding: 0;
+  margin: 0 0 32px;
+}
+
+.booking-step {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #7d8db0;
+  text-align: center;
+}
+
+.booking-step__num {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-bg);
+  color: var(--color-primary);
+  font-size: 14px;
+}
+
+.booking-step--current {
+  color: var(--color-dark);
+}
+
+.booking-step--current .booking-step__num {
+  background: var(--color-primary);
+  color: #fff;
+}
+
+.booking-step--done .booking-step__num {
+  background: var(--color-accent);
+  color: var(--color-dark);
+}
+
+/* Панель кроку */
+.booking-panel {
+  background: var(--color-bg);
+  border-radius: var(--radius-lg);
+  padding: 28px;
+  margin-bottom: 24px;
+  min-height: 240px;
+}
+
+.booking-devices {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 12px;
+}
+
+@media (max-width: 560px) {
+  .booking-devices {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.device-tile {
+  padding: 20px 12px;
+  border-radius: var(--radius-md);
+  border: 1.5px solid var(--color-muted);
+  background: #fff;
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--color-dark);
+  cursor: pointer;
+  & img {
+    max-width: 120px;
+  }
+}
+
+.device-tile--active {
+  border-color: var(--color-accent);
+  background: #e9fbfa;
+  color: var(--color-primary);
+}
+
+.booking-problem textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 14px;
+  border: 1.5px solid var(--color-muted);
+  border-radius: var(--radius-md);
+  font-family: inherit;
+  font-size: 14px;
+  color: var(--color-dark);
+  resize: vertical;
+}
+
+.booking-problem__count {
+  text-align: right;
+  font-size: 12px;
+  color: #7d8db0;
+  margin: 4px 0 12px;
+}
+
+.booking-hint {
+  font-size: 13px;
+  color: var(--color-primary);
+  margin: 0;
+}
+
+.booking-date-label {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--color-dark);
+  margin-bottom: 16px;
+}
+
+.booking-date-label input {
+  display: block;
+  margin-top: 6px;
+  padding: 11px 12px;
+  border: 1.5px solid var(--color-muted);
+  border-radius: var(--radius-sm);
+  font-family: inherit;
+  font-size: 14px;
+}
+
+.booking-slots {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.time-slot {
+  padding: 11px 18px;
+  border-radius: 999px;
+  border: 1.5px solid var(--color-muted);
+  background: #fff;
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--color-dark);
+  cursor: pointer;
+}
+
+.time-slot--active {
+  background: var(--color-primary);
+  border-color: var(--color-primary);
+  color: #fff;
+}
+
+.booking-summary {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px 32px;
+}
+
+@media (max-width: 640px) {
+  .booking-summary {
+    grid-template-columns: 1fr;
+  }
+}
+
+.summary-row {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  font-size: 14px;
+  color: var(--color-dark);
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--color-muted);
+}
+
+.summary-row:last-child {
+  border-bottom: none;
+}
+
+.summary-row__label {
+  font-size: 12px;
+  font-weight: 600;
+  color: #7d8db0;
+}
+
+/* Футер кроку */
+.booking-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.booking-footer p {
+  font-size: 13px;
+  color: var(--color-primary);
+  margin: 0;
+}
+
+.booking-nav {
+  display: flex;
+  gap: 12px;
+}
+
+.booking-nav button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Успіх */
+.booking-success {
+  text-align: center;
+  padding-top: 80px;
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+.booking-success h1 {
+  margin-bottom: 12px;
+}
+
+.booking-success p {
+  font-size: 14px;
+  color: var(--color-primary);
+  max-width: 420px;
+  margin: 0 auto 28px;
+}
+
+/* Поля нового пристрою / вибір власного пристрою (нові елементи; вигляд як у textarea) */
+.booking-device-fields {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 12px;
+  margin: 10px 0;
+}
+
+.booking-device-fields input,
+.booking-device-fields select {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px 14px;
+  border: 1.5px solid var(--color-muted);
+  border-radius: var(--radius-md);
+  font-family: inherit;
+  font-size: 14px;
+  color: var(--color-dark);
+}

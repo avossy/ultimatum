@@ -1,0 +1,260 @@
+.order-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 32px 24px 64px;
+}
+
+.order-back {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  margin-bottom: 20px;
+}
+
+.order-card {
+  background: #fff;
+  border-radius: var(--radius-lg);
+  padding: 36px 40px;
+  box-shadow: 0 16px 48px rgba(0, 27, 41, 0.08);
+}
+
+.order-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.order-header h1 {
+  font-size: 24px;
+  margin: 0 0 4px;
+  color: var(--color-dark);
+}
+
+.order-device {
+  margin: 0;
+  font-size: 15px;
+  color: var(--color-primary);
+}
+
+.order-header__right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.priority-select {
+  appearance: none;
+  border: none;
+  border-radius: 999px;
+  padding: 5px 28px 5px 12px;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M0 0l5 6 5-6z' fill='%23333c77'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+}
+
+.priority-select:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.priority-select--низький {
+  background-color: #eef1fb;
+  color: var(--color-primary);
+}
+
+.priority-select--звичайний {
+  background-color: var(--color-bg);
+  color: var(--color-primary);
+}
+
+.priority-select--високий {
+  background-color: #fff3e0;
+  color: #b06a00;
+}
+
+.priority-select--терміновий {
+  background-color: #fbe9e7;
+  color: #b3261e;
+}
+
+.order-meta {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  padding: 18px 0;
+  border-top: 1px solid var(--color-bg);
+  border-bottom: 1px solid var(--color-bg);
+  margin-bottom: 18px;
+}
+
+@media (max-width: 720px) {
+  .order-meta {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.order-meta > div {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 14px;
+  color: var(--color-dark);
+}
+
+.order-meta__label {
+  font-size: 12px;
+  color: #7d8db0;
+  font-weight: 600;
+}
+
+.order-problem {
+  font-size: 14px;
+  color: var(--color-dark);
+  margin: 0 0 28px;
+}
+
+.order-grid {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 32px;
+}
+
+@media (max-width: 820px) {
+  .order-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.order-col {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.order-section h2 {
+  font-size: 15px;
+  margin: 0 0 12px;
+  color: var(--color-dark);
+}
+
+.order-section select,
+.order-section textarea,
+.parts-form input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 11px 12px;
+  border: 1.5px solid var(--color-muted);
+  border-radius: var(--radius-sm);
+  font-family: inherit;
+  font-size: 14px;
+  color: var(--color-dark);
+}
+
+.order-section textarea {
+  resize: vertical;
+  margin-bottom: 10px;
+}
+
+.parts-list {
+  list-style: none;
+  margin: 0 0 12px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.parts-list li {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color: var(--color-dark);
+  padding-bottom: 8px;
+  border-bottom: 1px dashed var(--color-bg);
+}
+
+.parts-total {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color: var(--color-primary);
+  margin-bottom: 16px;
+}
+
+.parts-form {
+  display: grid;
+  grid-template-columns: 2fr 0.8fr 1fr auto;
+  gap: 8px;
+}
+
+@media (max-width: 480px) {
+  .parts-form {
+    grid-template-columns: 1fr;
+  }
+}
+
+.btn-primary,
+.btn-secondary {
+  border: none;
+  border-radius: var(--radius-sm);
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 14px;
+  cursor: pointer;
+  padding: 12px 18px;
+}
+
+.btn-primary {
+  background: var(--color-primary);
+  color: #fff;
+  width: 100%;
+}
+
+.btn-primary:hover {
+  background: var(--color-dark);
+}
+
+.btn-secondary {
+  margin: 20px 0;
+  background: var(--color-bg);
+  color: var(--color-primary);
+}
+
+.order-cost {
+  background: var(--color-bg);
+  border-radius: var(--radius-md);
+  padding: 20px;
+}
+
+.order-cost__value {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--color-dark);
+  margin: 6px 0 4px;
+}
+
+.order-cost__note {
+  font-size: 12px;
+  color: var(--color-primary);
+  margin: 0;
+}
+
+/* Поле вартості робіт (нове; повторює вигляд полів форми) */
+.order-section > input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 11px 12px;
+  margin-bottom: 10px;
+  border: 1.5px solid var(--color-muted);
+  border-radius: var(--radius-sm);
+  font-family: inherit;
+  font-size: 14px;
+  color: var(--color-dark);
+}

@@ -1,0 +1,267 @@
+.services-page {
+  background: #fff;
+}
+
+.services-btn-lg {
+  padding: 15px 28px;
+  font-size: 15px;
+}
+
+/* Hero */
+.services-hero {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 72px 24px;
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 48px;
+  align-items: center;
+}
+
+.services-hero__eyebrow {
+  display: inline-block;
+  background: var(--color-bg);
+  color: var(--color-primary);
+  font-weight: 600;
+  font-size: 13px;
+  padding: 7px 16px;
+  border-radius: 999px;
+  margin-bottom: 20px;
+}
+
+.services-hero__text h1 {
+  font-size: 44px;
+  line-height: 1.15;
+  color: var(--color-dark);
+  margin: 0 0 18px;
+}
+
+.services-hero__text h1 b {
+  color: var(--color-primary);
+}
+
+.services-hero__text p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--color-primary);
+  margin: 0 0 28px;
+}
+
+.services-hero__actions {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.services-hero__art {
+  border-radius: var(--radius-lg);
+  max-width: 520px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.services-hero__art img {
+  width: 100%;
+  max-width: 150px;
+  height: 120px;
+  object-fit: contain;
+}
+
+/* Cards */
+.services-grid {
+  max-width: 1200px;
+  margin: 0 auto 72px;
+  padding: 0 24px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.services-card {
+  background: var(--color-bg);
+  border-radius: var(--radius-md);
+  padding: 28px 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.services-card__icon {
+  width: 72px;
+  height: 72px;
+  object-fit: contain;
+  margin-bottom: 16px;
+}
+
+.services-card h2 {
+  font-size: 18px;
+  color: var(--color-dark);
+  margin: 0 0 8px;
+}
+
+.services-card p {
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--color-primary);
+  margin: 0 0 14px;
+}
+
+.services-card ul {
+  list-style: none;
+  margin: 0 0 20px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 13px;
+  color: var(--color-dark);
+}
+
+.services-card li::before {
+  content: '✓ ';
+  color: var(--color-accent);
+  font-weight: 700;
+}
+
+.services-card__link {
+  margin-top: auto;
+  font-weight: 700;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+/* Steps */
+.services-steps {
+  max-width: 1200px;
+  margin: 0 auto 72px;
+  padding: 0 24px;
+}
+
+.services-steps h2 {
+  font-size: 28px;
+  color: var(--color-dark);
+  margin: 0 0 28px;
+}
+
+.services-steps ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.services-steps li {
+  border: 1.5px solid var(--color-muted);
+  border-radius: var(--radius-md);
+  padding: 24px;
+}
+
+.services-steps__num {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: var(--color-accent);
+  color: var(--color-dark);
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+
+.services-steps h3 {
+  font-size: 16px;
+  color: var(--color-dark);
+  margin: 0 0 6px;
+}
+
+.services-steps p {
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--color-primary);
+  margin: 0;
+}
+
+/* CTA */
+.services-cta {
+  background: var(--color-primary);
+  color: #fff;
+  border-radius: var(--radius-lg);
+  max-width: 1200px;
+  margin: 0 auto 72px;
+  padding: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.services-cta h2 {
+  font-size: 24px;
+  margin: 0 0 8px;
+}
+
+.services-cta p {
+  font-size: 14px;
+  color: var(--color-muted);
+  margin: 0;
+}
+
+.services-cta .btn-filled {
+  background: var(--color-accent);
+  color: var(--color-dark);
+  border-color: var(--color-accent);
+}
+
+/* Footer */
+.services-footer {
+  background: var(--color-dark);
+  color: var(--color-muted);
+  padding: 28px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  font-size: 13px;
+}
+
+.services-footer div {
+  display: flex;
+  gap: 20px;
+}
+
+.services-footer a {
+  color: var(--color-muted);
+  text-decoration: none;
+}
+
+.services-footer a:hover {
+  color: #fff;
+}
+
+@media (max-width: 860px) {
+  .services-hero {
+    grid-template-columns: 1fr;
+    padding: 48px 20px;
+  }
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .services-steps ol {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .services-cta {
+    padding: 32px 24px;
+  }
+}
+
+@media (max-width: 560px) {
+  .services-grid,
+  .services-steps ol {
+    grid-template-columns: 1fr;
+  }
+}

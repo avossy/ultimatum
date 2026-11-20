@@ -1,0 +1,89 @@
+.my-orders {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 24px 64px;
+  background: #fff;
+}
+
+@media (max-width: 640px) {
+  .my-orders {
+    padding: 24px 20px 48px;
+  }
+}
+
+.my-orders__header h1 {
+  font-size: 28px;
+  color: var(--color-dark);
+  margin: 0 0 4px;
+}
+
+.my-orders__header p {
+  font-size: 14px;
+  color: var(--color-primary);
+  margin: 0 0 20px;
+}
+
+.my-orders__tabs {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.my-orders__tabs button {
+  padding: 9px 18px;
+  border-radius: 999px;
+  border: 1.5px solid var(--color-muted);
+  background: #fff;
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 13px;
+  color: var(--color-primary);
+  cursor: pointer;
+}
+
+.my-orders__tabs .tab-active {
+  background: var(--color-primary);
+  border-color: var(--color-primary);
+  color: #fff;
+}
+
+.my-orders__table-wrap {
+  background: var(--color-bg);
+  border-radius: var(--radius-lg);
+  padding: 20px;
+  overflow-x: auto;
+}
+
+.my-orders__empty {
+  text-align: center;
+  color: var(--color-primary);
+  padding: 24px 0;
+}
+
+.priority-badge {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.priority-badge--низький {
+  background: #eef1fb;
+  color: var(--color-primary);
+}
+
+.priority-badge--звичайний {
+  background: var(--color-bg);
+  color: var(--color-primary);
+}
+
+.priority-badge--високий {
+  background: #fff3e0;
+  color: #b06a00;
+}
+
+.priority-badge--терміновий {
+  background: #fbe9e7;
+  color: #b3261e;
+}
